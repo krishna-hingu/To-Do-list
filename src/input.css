@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* watch cammond
+npx @tailwindcss/cli -i ./src/input.css -o ./dist/assets/css/output.css --watch*/
+
+body {
+  font-family: "Jost", sans-serif;
+  background-image: url('../images/theme-bg-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
