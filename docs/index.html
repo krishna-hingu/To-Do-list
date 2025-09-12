@@ -7,31 +7,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body class=" text-white flex items-center justify-center min-h-screen bg-[url('../assets/images/theme-bg-image.jpg')] bg-cover bg-no-repeat">
+<body class=" text-white flex items-center justify-center min-h-screen bg-[url('../assets/images/theme-bg-image.jpg')] bg-cover bg-center bg-no-repeat">
   <div class="container flex items-center justify-center min-h-screen p-5">
-    <div class="todo-app w-full max-w-lg flex flex-col gap-8 bg-black/30 backdrop-blur-[2px] p-8 rounded-lg shadow-lg ">
-      <h1 class="text-white">To-Do App</h1>
-      <form action="" class="input-area">
-        <input type="text" id="task-input" placeholder="Add a new task..." />
-        <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i>Add Task</button>
+    <div class="todo-app w-full max-w-lg flex flex-col gap-8 bg-black/30 backdrop-blur-[2px] p-8 rounded-lg shadow-lg">
+      <h1 class="text-4xl text-center text-white font-bold">To-Do App</h1>
+      <form action="" class="input-area flex justify-between items-center w-full">
+        <input class="flex-1 py-4 px-3.5 text-base border-none outline-none rounded-4xl bg-[rgba(221,221,221,0.2)]" type="text" id="task-input" placeholder="Add a new task..." />
+        <button class="flex justify-center items-center ml-2.5 p-5 rounded-full bg-[rgba(221,221,221,0.2)] text-base cursor-pointer transition-all duration-300 ease-in-out hover:scale-100 hover:bg-[#DDDDDD] hover:text-black" type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
       </form>
-      <div class="todos-container">
-        <ul id="task-list"></ul>
+      <div class="todos-container flex flex-col justify-center items-center ">
+        <ul class="w-full" id="task-list"></ul>
         <lottie-player
           class="empty-image"
           src="./assets/json/WUXHdK057S.json"
           background="transparent"
           speed="1"
-          style="width: 300px; height: 300px;"
+          style="width: 100%; height: 300px;"
           loop
           autoplay
         ></lottie-player>
       </div>
     </div>
   </div>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

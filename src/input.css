@@ -1,6 +1,6 @@
 @import "tailwindcss";
 /* watch cammond
-npx @tailwindcss/cli -i ./src/input.css -o ./dist/assets/css/output.css --watch*/
+npx @tailwindcss/cli -i ./src/input.css -o ./docs/assets/css/output.css --watch*/
 
 body {
   font-family: "Jost", sans-serif;
